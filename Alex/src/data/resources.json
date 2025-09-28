@@ -1,0 +1,80 @@
+{
+  "resources": {
+    "unemployment_insurance": {
+      "id": "unemployment_insurance",
+      "name": "Unemployment Insurance",
+      "url": "https://www.mass.gov/unemployment-benefits-ui",
+      "phone": "877-626-6800",
+      "description": "Weekly payments for eligible unemployed workers",
+      "category": "benefits"
+    },
+    "masshire_jobquest": {
+      "id": "masshire_jobquest",
+      "name": "MassHire JobQuest",
+      "url": "https://masshire.jobquest.org",
+      "description": "Job search platform required for UI benefits",
+      "category": "job_search"
+    },
+    "career_centers": {
+      "id": "career_centers",
+      "name": "MassHire Career Centers",
+      "url": "https://www.mass.gov/locations/masshire-career-centers",
+      "phone": "(617) 626-5300",
+      "description": "Free career counseling and job search assistance",
+      "category": "career_services"
+    },
+    "snap_benefits": {
+      "id": "snap_benefits",
+      "name": "SNAP Food Benefits",
+      "url": "https://www.mass.gov/how-to/apply-for-snap-benefits",
+      "description": "Food assistance for low-income individuals/families",
+      "category": "benefits"
+    },
+    "emergency_aid": {
+      "id": "emergency_aid",
+      "name": "Emergency Aid (EAEDC)",
+      "url": "https://www.mass.gov/eaedc",
+      "description": "Emergency assistance for basic needs",
+      "category": "benefits"
+    },
+    "legal_aid": {
+      "id": "legal_aid",
+      "name": "Massachusetts Legal Aid",
+      "phone": "(800) 342-5342",
+      "url": "https://masslegalservices.org",
+      "description": "Free legal representation for UI appeals",
+      "category": "legal"
+    },
+    "healthcare_coverage": {
+      "id": "healthcare_coverage",
+      "name": "MassHealth",
+      "url": "https://www.mass.gov/masshealth",
+      "phone": "(800) 841-2900",
+      "description": "Healthcare coverage for low-income residents",
+      "category": "healthcare"
+    },
+    "fuel_assistance": {
+      "id": "fuel_assistance",
+      "name": "Low Income Home Energy Assistance Program",
+      "url": "https://www.mass.gov/liheap",
+      "phone": "(800) 632-8175",
+      "description": "Help with heating and utility bills",
+      "category": "benefits"
+    },
+    "workforce_training": {
+      "id": "workforce_training",
+      "name": "Workforce Innovation and Opportunity Act (WIOA)",
+      "url": "https://www.mass.gov/wioa",
+      "description": "Free training programs for in-demand careers",
+      "category": "training"
+    },
+    "disability_services": {
+      "id": "disability_services",
+      "name": "Massachusetts Rehabilitation Commission",
+      "url": "https://www.mass.gov/mrc",
+      "phone": "(800) 245-6543",
+      "description": "Vocational rehabilitation services for people with disabilities",
+      "category": "disability"
+    }
+  }
+}

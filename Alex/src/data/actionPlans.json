@@ -1,0 +1,252 @@
+{
+  "actionPlans": {
+    "layoff_eligible": {
+      "id": "layoff_eligible",
+      "title": "Layoff - Eligible for Benefits",
+      "description": "You were laid off through no fault of your own and should be eligible for unemployment benefits.",
+      "eligibilityCategory": "layoff",
+      "immediateActions": [
+        {
+          "id": "file_ui_claim",
+          "title": "File Unemployment Insurance Claim",
+          "description": "Apply for unemployment benefits as soon as possible. You can file online or by phone.",
+          "priority": "immediate",
+          "timeEstimate": "30-45 minutes",
+          "resources": ["unemployment_insurance"],
+          "completed": false
+        },
+        {
+          "id": "register_jobquest",
+          "title": "Register for MassHire JobQuest",
+          "description": "Create your profile on the required job search platform.",
+          "priority": "immediate",
+          "timeEstimate": "20-30 minutes",
+          "resources": ["masshire_jobquest"],
+          "completed": false
+        },
+        {
+          "id": "gather_documents",
+          "title": "Gather Required Documents",
+          "description": "Collect Social Security card, driver's license, and employment history for the past 18 months.",
+          "priority": "immediate",
+          "timeEstimate": "15-30 minutes",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "shortTermActions": [
+        {
+          "id": "visit_career_center",
+          "title": "Visit MassHire Career Center",
+          "description": "Schedule an appointment for personalized career counseling and job search assistance.",
+          "priority": "short_term",
+          "timeEstimate": "1-2 hours",
+          "resources": ["career_centers"],
+          "completed": false
+        },
+        {
+          "id": "apply_healthcare",
+          "title": "Apply for Healthcare Coverage",
+          "description": "If you lost employer health insurance, apply for MassHealth or other coverage.",
+          "priority": "short_term",
+          "timeEstimate": "30-60 minutes",
+          "resources": ["healthcare_coverage"],
+          "completed": false
+        },
+        {
+          "id": "budget_review",
+          "title": "Review Your Budget",
+          "description": "Assess your financial situation and identify areas to reduce expenses.",
+          "priority": "short_term",
+          "timeEstimate": "1-2 hours",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "ongoingActions": [
+        {
+          "id": "weekly_certification",
+          "title": "Complete Weekly Certification",
+          "description": "Certify for benefits every week to continue receiving payments.",
+          "priority": "ongoing",
+          "timeEstimate": "10-15 minutes weekly",
+          "resources": ["unemployment_insurance"],
+          "completed": false
+        },
+        {
+          "id": "job_search_activities",
+          "title": "Conduct Job Search Activities",
+          "description": "Search and apply for jobs, attend job fairs, and network with professionals.",
+          "priority": "ongoing",
+          "timeEstimate": "10+ hours weekly",
+          "resources": ["masshire_jobquest"],
+          "completed": false
+        },
+        {
+          "id": "skills_training",
+          "title": "Explore Training Opportunities",
+          "description": "Consider workforce training programs to enhance your skills.",
+          "priority": "ongoing",
+          "timeEstimate": "Varies",
+          "resources": ["workforce_training"],
+          "completed": false
+        }
+      ],
+      "hiddenResources": [
+        {
+          "id": "fuel_assistance",
+          "name": "Low Income Home Energy Assistance Program",
+          "url": "https://www.mass.gov/liheap",
+          "phone": "(800) 632-8175",
+          "description": "Help with heating and utility bills during unemployment",
+          "category": "benefits"
+        },
+        {
+          "id": "legal_aid",
+          "name": "Massachusetts Legal Aid",
+          "phone": "(800) 342-5342",
+          "url": "https://masslegalservices.org",
+          "description": "Free legal representation for UI appeals if benefits are denied",
+          "category": "legal"
+        }
+      ]
+    },
+    "fired_performance": {
+      "id": "fired_performance",
+      "title": "Termination - Performance Issues",
+      "description": "You were terminated for performance reasons. You may still be eligible for benefits depending on circumstances.",
+      "eligibilityCategory": "fired_performance",
+      "immediateActions": [
+        {
+          "id": "file_ui_claim_performance",
+          "title": "File Unemployment Insurance Claim",
+          "description": "Apply for benefits despite termination - you may still qualify if the performance issues weren't willful misconduct.",
+          "priority": "immediate",
+          "timeEstimate": "30-45 minutes",
+          "resources": ["unemployment_insurance"],
+          "completed": false
+        },
+        {
+          "id": "document_termination",
+          "title": "Document Your Termination",
+          "description": "Gather any documentation about your termination, including performance reviews and communications.",
+          "priority": "immediate",
+          "timeEstimate": "30-60 minutes",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "shortTermActions": [
+        {
+          "id": "legal_consultation",
+          "title": "Consider Legal Consultation",
+          "description": "If you believe the termination was unfair, consider speaking with an employment attorney.",
+          "priority": "short_term",
+          "timeEstimate": "1 hour",
+          "resources": ["legal_aid"],
+          "completed": false
+        }
+      ],
+      "ongoingActions": [
+        {
+          "id": "skill_improvement",
+          "title": "Focus on Skill Improvement",
+          "description": "Use this time to address any skill gaps that may have contributed to performance issues.",
+          "priority": "ongoing",
+          "timeEstimate": "Varies",
+          "resources": ["workforce_training"],
+          "completed": false
+        }
+      ],
+      "hiddenResources": []
+    },
+    "quit_good_cause": {
+      "id": "quit_good_cause",
+      "title": "Voluntary Quit - Good Cause",
+      "description": "You quit for reasons that may qualify as 'good cause' under Massachusetts law.",
+      "eligibilityCategory": "quit_good_cause",
+      "immediateActions": [
+        {
+          "id": "file_ui_claim_quit",
+          "title": "File Unemployment Insurance Claim",
+          "description": "Apply for benefits and explain your reasons for quitting. Good cause reasons may make you eligible.",
+          "priority": "immediate",
+          "timeEstimate": "45-60 minutes",
+          "resources": ["unemployment_insurance"],
+          "completed": false
+        },
+        {
+          "id": "document_good_cause",
+          "title": "Document Your Reasons",
+          "description": "Gather evidence supporting your good cause reasons (medical records, harassment documentation, etc.).",
+          "priority": "immediate",
+          "timeEstimate": "1-2 hours",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "shortTermActions": [
+        {
+          "id": "prepare_for_interview",
+          "title": "Prepare for UI Interview",
+          "description": "You may need to participate in a fact-finding interview about your reasons for quitting.",
+          "priority": "short_term",
+          "timeEstimate": "1-2 hours prep",
+          "resources": ["legal_aid"],
+          "completed": false
+        }
+      ],
+      "ongoingActions": [],
+      "hiddenResources": []
+    },
+    "health_disability": {
+      "id": "health_disability",
+      "title": "Health/Disability Related Separation",
+      "description": "Your employment ended due to health or disability issues.",
+      "eligibilityCategory": "health_disability",
+      "immediateActions": [
+        {
+          "id": "contact_mrc",
+          "title": "Contact Mass Rehabilitation Commission",
+          "description": "Get connected with vocational rehabilitation services and support.",
+          "priority": "immediate",
+          "timeEstimate": "30 minutes",
+          "resources": ["disability_services"],
+          "completed": false
+        },
+        {
+          "id": "apply_disability_benefits",
+          "title": "Explore Disability Benefits",
+          "description": "Research Social Security Disability or other disability benefit programs.",
+          "priority": "immediate",
+          "timeEstimate": "1-2 hours",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "shortTermActions": [
+        {
+          "id": "medical_documentation",
+          "title": "Gather Medical Documentation",
+          "description": "Collect medical records and physician statements supporting your condition.",
+          "priority": "short_term",
+          "timeEstimate": "2-4 hours",
+          "resources": [],
+          "completed": false
+        }
+      ],
+      "ongoingActions": [
+        {
+          "id": "rehabilitation_services",
+          "title": "Participate in Rehabilitation Services",
+          "description": "Work with MRC counselors on return-to-work planning and accommodations.",
+          "priority": "ongoing",
+          "timeEstimate": "Varies",
+          "resources": ["disability_services"],
+          "completed": false
+        }
+      ],
+      "hiddenResources": []
+    }
+  }
+}

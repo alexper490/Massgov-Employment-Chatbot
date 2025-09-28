@@ -1,0 +1,196 @@
+{
+  "questions": {
+    "initial": {
+      "id": "initial",
+      "text": "Hi! I'm here to help you navigate unemployment resources in Massachusetts. Can you tell me about your current employment situation?",
+      "inputType": "text",
+      "category": "greeting"
+    },
+    "employment_status": {
+      "id": "employment_status",
+      "text": "What best describes your current employment situation?",
+      "options": [
+        {
+          "value": "unemployed",
+          "label": "Currently unemployed",
+          "nextQuestionId": "unemployment_timeline"
+        },
+        {
+          "value": "underemployed",
+          "label": "Employed but reduced hours/pay",
+          "nextQuestionId": "underemployment_details"
+        },
+        {
+          "value": "expecting_loss",
+          "label": "Employed but expecting job loss",
+          "nextQuestionId": "expected_loss_timeline"
+        },
+        {
+          "value": "never_employed",
+          "label": "Never been employed",
+          "nextQuestionId": "first_time_seeker"
+        }
+      ],
+      "inputType": "radio",
+      "category": "classification"
+    },
+    "unemployment_timeline": {
+      "id": "unemployment_timeline",
+      "text": "When did your employment end?",
+      "options": [
+        {
+          "value": "recent",
+          "label": "Within the last week",
+          "nextQuestionId": "separation_reason"
+        },
+        {
+          "value": "weeks",
+          "label": "1-4 weeks ago",
+          "nextQuestionId": "separation_reason"
+        },
+        {
+          "value": "months",
+          "label": "1-6 months ago",
+          "nextQuestionId": "separation_reason"
+        },
+        {
+          "value": "long_term",
+          "label": "More than 6 months ago",
+          "nextQuestionId": "long_term_unemployed"
+        }
+      ],
+      "inputType": "radio",
+      "category": "timeline"
+    },
+    "separation_reason": {
+      "id": "separation_reason",
+      "text": "How did your employment end?",
+      "options": [
+        {
+          "value": "layoff",
+          "label": "Laid off/downsized",
+          "nextQuestionId": "layoff_details"
+        },
+        {
+          "value": "fired",
+          "label": "Fired by employer",
+          "nextQuestionId": "termination_details"
+        },
+        {
+          "value": "quit",
+          "label": "Quit voluntarily",
+          "nextQuestionId": "quit_reason"
+        },
+        {
+          "value": "contract_end",
+          "label": "Contract ended",
+          "nextQuestionId": "contract_details"
+        },
+        {
+          "value": "company_closed",
+          "label": "Company closed",
+          "nextQuestionId": "closure_details"
+        },
+        {
+          "value": "health",
+          "label": "Health/disability issue",
+          "nextQuestionId": "health_details"
+        }
+      ],
+      "inputType": "radio",
+      "category": "separation"
+    },
+    "layoff_details": {
+      "id": "layoff_details",
+      "text": "Was this part of mass layoffs affecting multiple employees?",
+      "options": [
+        {
+          "value": "mass_layoff",
+          "label": "Yes, multiple employees were laid off"
+        },
+        {
+          "value": "individual_layoff",
+          "label": "No, it was just me or a few people"
+        }
+      ],
+      "inputType": "radio",
+      "category": "details"
+    },
+    "termination_details": {
+      "id": "termination_details",
+      "text": "What was the reason for termination?",
+      "options": [
+        {
+          "value": "performance",
+          "label": "Performance issues"
+        },
+        {
+          "value": "misconduct",
+          "label": "Misconduct or policy violation"
+        },
+        {
+          "value": "attendance",
+          "label": "Attendance issues"
+        },
+        {
+          "value": "other",
+          "label": "Other reason"
+        }
+      ],
+      "inputType": "radio",
+      "category": "details"
+    },
+    "quit_reason": {
+      "id": "quit_reason",
+      "text": "Why did you leave your job?",
+      "options": [
+        {
+          "value": "unsafe_conditions",
+          "label": "Unsafe working conditions"
+        },
+        {
+          "value": "harassment",
+          "label": "Harassment or discrimination"
+        },
+        {
+          "value": "family_emergency",
+          "label": "Family emergency or caregiving"
+        },
+        {
+          "value": "health_reasons",
+          "label": "Health reasons"
+        },
+        {
+          "value": "better_opportunity",
+          "label": "Found a better opportunity"
+        },
+        {
+          "value": "personal_reasons",
+          "label": "Personal reasons"
+        }
+      ],
+      "inputType": "radio",
+      "category": "details"
+    },
+    "health_details": {
+      "id": "health_details",
+      "text": "Is this health condition temporary or permanent?",
+      "options": [
+        {
+          "value": "temporary",
+          "label": "Temporary condition (expected recovery)"
+        },
+        {
+          "value": "permanent",
+          "label": "Permanent or long-term disability"
+        },
+        {
+          "value": "unknown",
+          "label": "Uncertain about duration"
+        }
+      ],
+      "inputType": "radio",
+      "category": "details"
+    }
+  }
+}
